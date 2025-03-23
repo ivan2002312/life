@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Terraria 1.0.3</title>
+  <style>
+    body {
+      color: #ffffff;
+      font-family: sans-serif;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+    #play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 24px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="play-button" title="Нажмите, чтобы начать игру">Играть</div>
+
+  <script>
+    document.getElementById('play-button').addEventListener('click', function() {
+      // Здесь начинается игра
+      window.location.href = 'game.html'; // Redirect to game.html
+    });
+  </script>
+</body>
+</html>
